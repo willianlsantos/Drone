@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F0F0F0;
+}
+
+.nav-itens {
+    background-image: linear-gradient(to right bottom, #8E8E8F, #D31E1E, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(1px 2px 10px);
+
+}
+
+.drone-logo {
+    object-fit: cover;
+    height: 7vh;
+    margin: auto 0;
+    display: flex;
+}
+
+.nav-li {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    margin-right: 300px;
+}
+
+li {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+li:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+.home:active {
+    font-size: 19px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px 0;
+}
+
+
+article {
+    align-items: start;
+    margin-right: 100px;
+}
+
+h1 {
+    width: 500px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+h1 span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    background-image: linear-gradient(to right bottom, #8E8E8F, #D31E1E, #000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    width: 400px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background: #2e2c2c;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.4s ease-in-out;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.main-border {
+
+    border-radius: 40px;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #8E8E8F, #D31E1E, #000000);
+}
+
+.img-drone {
+    object-fit: cover;
+    width: 750px;
+    filter: drop-shadow(5px 10px 15px);
+    animation: drone-3d 2s infinite alternate;
+}
+
+
+@keyframes drone-3d {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(30px);
+    }
+}
